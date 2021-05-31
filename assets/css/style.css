@@ -1,1 +1,288 @@
 @charset "utf-8";
+
+.inner{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.center{
+  text-align: center;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.body{
+  background-color: #eff4f8;
+  padding: 25px 0 50px 0;
+}
+
+.form{
+  background-color: #fff;
+  width: max-content;
+  padding: 50px 60px;
+  margin: 0 auto;
+  box-shadow: 0 0 2px 1px rgba(184, 184, 184, 0.42);
+}
+
+.title{
+  font-weight: 900;
+  font-size: 24px;
+  color: #4e4e4e;
+}
+
+.link{
+  margin-top: 30px;
+}
+
+.social_account{
+  padding: 13px 70px;
+  font-size: 13px;
+}
+
+.facebook{
+  background-color: #375c9b;
+  color: #fff;
+  border: solid 1px #375c9b;
+}
+
+.google{
+  background-color: #fff;
+  color: #bd3a3a;
+  border: solid 1px #ddd;
+  margin-left: 5px;
+}
+
+.radius{
+  border-radius: 3px;
+}
+
+.attention{
+  color: #979696;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.indexbox{
+  margin-top: 25px;
+  width: 100%;
+}
+
+.line{
+  width: 205px;
+  height: 1px;
+  background-color: #e9e8e8;
+  vertical-align: middle;
+}
+
+.index{
+  color: #979696;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+.box{
+  margin-top: 20px;
+}
+
+.text{
+  color: #4d4c4c;
+  font-size: 12px;
+}
+
+.cmt::after{
+  content: " ※";
+  color: #c53636;
+}
+
+.input{
+  margin-top: 5px;
+}
+
+.textbox{
+  padding: 10px 5px;
+  font-size: 13px;
+  border-radius: 3px;
+  border: 1px solid #d0d0d0;
+  background-color: #fafafa;
+}
+
+.name{
+  width: 230px;
+}
+
+.right{
+  float: right;
+}
+
+.pref{
+  width: 250px;
+}
+
+.column{
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.course{
+  margin-top: 10px;
+}
+
+input[type="text"]:focus{
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 2px 1px rgba(40, 211, 208, 0.42);
+}
+
+input[type="email"]:focus{
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 2px 1px rgba(40, 211, 208, 0.42);
+}
+
+input[type="password"]:focus{
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 2px 1px rgba(40, 211, 208, 0.42);
+}
+
+textarea:focus{
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 2px 1px rgba(40, 211, 208, 0.42);
+}
+
+.checkbox input[type="checkbox"]{
+  display: none;
+}
+
+.checkbox input[type="checkbox"]+label{
+  display: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.checkbox input[type="checkbox"]+label::before{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  margin-top: -10px;
+  left: 0;
+  top: 50%;
+  border: 1px solid;
+  border-color:  #e9e8e8;
+  background-color: #fff;
+}
+
+.checkbox input[type="checkbox"]:checked+label::after{
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 18px;
+  height: 9px;
+  margin-top: -9px;
+  top: 50%;
+  left: 3px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  border-color:  #52c4bc;
+}
+
+input[type=radio] {
+  display: none;
+}
+.radio{
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 27px;
+  position: relative;
+  width: auto;
+}
+.radio::before {
+  background: #fff;
+  border: 1px solid #e9e8e8;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 16px;
+  left: 5px;
+  margin-top: -8px;
+  position: absolute;
+  top: 50%;
+  width: 16px;
+}
+.radio::after {
+  background: #52c4bc;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 10px;
+  left: 9px;
+  margin-top: -4px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+input[type=radio]:checked+.radio::after {
+  opacity: 1;
+}
+
+.create{
+  margin-top: 20px;
+  width: 100%;
+}
+
+.button{
+  background-color: #52c4bc;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.postscript{
+  font-size: 12px;
+}
+
+.transfer{
+  color: #52c4bc;
+}
+
+.help{
+  margin-top: 10px;
+}
+
+.facebook:hover{
+  background-color: #2b4a7e;
+}
+
+.google:hover{
+  background-color: #f8f7f7;
+}
+
+.button:hover {
+  background-color: #44a39d;
+}
+
+.transfer:hover{
+  color: #53dbd2;
+}
+
+.under:hover{
+  border-bottom: 1px solid #53dbd2;
+  padding-bottom: 2px;
+}
+
+.textarea{
+  resize: none;
+  height: 100px;
+}

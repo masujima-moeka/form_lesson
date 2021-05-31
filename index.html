@@ -9,7 +9,110 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-  <body>
-
+  <body class="body">
+    <form action="/form.php" method="post" class="form radius">
+      <h1 class="title center">アカウント作成</h1>
+      <div class="link center">
+        <a  href="#" class="inline social_account facebook radius">Facebookでスタート</a>
+        <a  href="#" class="inline social_account google radius">Googleでスタート</a>
+      </div>
+      <div class="attention center">
+        <p>タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+      </div>
+      <div class="center indexbox inner center">
+        <i class="inline line"></i>
+        <p class="inline index">アカウント情報</p>
+        <i class="inline line"></i>
+      </div>
+      <div class="box inner">
+        <div class="inline">
+          <p class="text cmt">名字</p>
+          <label for="name"></label>
+          <input type="text" id="name" name="name" class="input textbox name">
+        </div>
+        <div class="inline right">
+          <p class="text cmt">名前</p>
+          <label for="name"></label>
+          <input type="text" id="name" name="name" class="input textbox name">
+        </div>
+        <div class="box">
+          <p class="text">性別</p>
+          <div class="input">
+            <input type="radio" id="man" name="sex" checked="checked">
+            <label for="man" class="radio">男性</label>
+            <input type="radio" id="woman" name="sex">
+            <label for="woman" class="radio">女性</label>
+            <input type="radio" id="other" name="sex">
+            <label for="other" class="radio">その他</label>
+          </div>
+        </div>
+        <div class="box">
+          <p class="text">出身</p>
+          <div>
+            <select name="pref" class="input textbox pref">
+              <optipn value="Tokyo">東京</optipn>
+              <optipn value="Chiba">千葉</optipn>
+              <optipn value="Saitama">埼玉</optipn>
+              <optipn value="Kanagawa">神奈川</optipn>
+            </select>
+          </div>
+        </div>
+        <div class="box">
+          <p class="text cmt">Eメール</p>
+          <label for=""></label>
+          <input type="email" id="" name="" placeholder="ex)hoge@example.com" class="input textbox column">
+        </div>
+        <div class="box">
+          <p class="text">電話番号</p>
+          <label for="" class="label"></label>
+          <input type="text" id="" name="" placeholder="ex)09012345678" class="input textbox column">
+        </div>
+        <div class="box">
+          <p class="text cmt">パスワード</p>
+          <label for="" class="label">
+            <input type="password" id="" name="" class="input textbox column">
+          </label>
+        </div>
+        <div class="box">
+          <p class="text cmt">パスワード(確認用)</p>
+          <label for="" class="label">
+            <input type="password" id="" name="" class="input textbox column">
+          </label>
+        </div>
+        <div class="box">
+          <p class="text">希望コース</p>
+          <div class="input checkbox">
+            <div class="">
+              <input id="riyu1" type="checkbox" name="riyu" value="1"><label for="riyu1">フロントエンド</label>
+            </div>
+            <div class="course">
+              <input id="riyu2" type="checkbox" name="riyu" value="2"><label for="riyu2">バックエンド</label>
+            </div>
+            <div class="course">
+              <input id="riyu3" type="checkbox" name="riyu" value="3"><label for="riyu3">アプリ</label>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="text">備考</p>
+          <label for="message"></label>
+          <textarea id="message" name="message" placeholder="何かあればご記入下さい" class="input textbox column textarea"></textarea>
+        </div>
+        <div class="box">
+          <a href="#" class="create center">
+            <p class="button radius">アカウント作成</p>
+          </a>
+        </div>
+        <div class="box">
+          <p class="postscript">アカウントを作成することにより、<a href="#" class="transfer">利用規約</a>と<a href="#" class="transfer">プライバシーポリシー</a>に同意するものとします。</p>
+        </div>
+      </div>
+    </form>
+    <div class="link center">
+      <p class="postscript">すでにアカウントをお持ちですか？ <a href="#" class="transfer under">ログイン</a></p>
+    <div class="help center">
+      <a href="#" class="transfer postscript under">認証メールが届きませんか？</a>
+    </div>
+    </div>
   </body>
 </html>
