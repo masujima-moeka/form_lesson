@@ -153,6 +153,10 @@ textarea:focus{
   box-shadow: 0 0 2px 1px rgba(40, 211, 208, 0.42);
 }
 
+select:focus{
+  outline: 0;
+}
+
 .checkbox input[type="checkbox"]{
   display: none;
 }
