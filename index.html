@@ -27,18 +27,18 @@
       <div class="box inner">
         <div class="inline">
           <p class="text cmt">名字</p>
-          <label for="name"></label>
-          <input type="text" id="name" name="name" required aria-required="true" class="input textbox name">
+          <label for="family-name"></label>
+          <input type="text" id="family-name" name="family-name" required aria-required="true" class="input textbox name">
         </div>
         <div class="inline right">
           <p class="text cmt">名前</p>
-          <label for="name"></label>
-          <input type="text" id="name" name="name" required aria-required="true" class="input textbox name">
+          <label for="given-nam"></label>
+          <input type="text" id="given-name" name="given-name" required aria-required="true" class="input textbox name">
         </div>
         <div class="box">
           <p class="text">性別</p>
           <div class="input">
-            <input type="radio" id="man" name="sex" checked="checked">
+            <input type="radio" id="man" name="sex">
             <label for="man" class="radio">男性</label>
             <input type="radio" id="woman" name="sex">
             <label for="woman" class="radio">女性</label>
@@ -59,37 +59,40 @@
         </div>
         <div class="box">
           <p class="text cmt">Eメール</p>
-          <label for=""></label>
+          <label for="email"></label>
           <input type="email" id="email" name="email" placeholder="ex)hoge@example.com" required aria-required="true" class="input textbox column">
         </div>
         <div class="box">
           <p class="text">電話番号</p>
-          <label for="" class="label"></label>
-          <input type="text" id="email" name="email" placeholder="ex)09012345678" class="input textbox column">
+          <label for="tel" class="label"></label>
+          <input type="text" id="tel" name="tel" placeholder="ex)09012345678" class="input textbox column">
         </div>
         <div class="box">
           <p class="text cmt">パスワード</p>
-          <label for="" class="label">
+          <label for="password" class="label">
             <input type="password" id="password" name="password" required aria-required="true" class="input textbox column">
           </label>
         </div>
         <div class="box">
           <p class="text cmt">パスワード(確認用)</p>
-          <label for="" class="label">
-            <input type="password" id="password" name="password" required aria-required="true" class="input textbox column">
+          <label for="password_confirmation" class="label">
+            <input type="password" id="password_confirmation" name="password" required aria-required="true" class="input textbox column">
           </label>
         </div>
         <div class="box">
           <p class="text">希望コース</p>
           <div class="input checkbox">
             <div class="">
-              <input id="riyu1" type="checkbox" name="riyu" value="1"><label for="riyu1">フロントエンド</label>
+              <input id="front" type="checkbox" name="course">
+              <label for="front">フロントエンド</label>
             </div>
             <div class="course">
-              <input id="riyu2" type="checkbox" name="riyu" value="2"><label for="riyu2">バックエンド</label>
+              <input id="back" type="checkbox" name="course">
+              <label for="back">バックエンド</label>
             </div>
             <div class="course">
-              <input id="riyu3" type="checkbox" name="riyu" value="3"><label for="riyu3">アプリ</label>
+              <input id="application" type="checkbox" name="course">
+              <label for="application">アプリ</label>
             </div>
           </div>
         </div>
