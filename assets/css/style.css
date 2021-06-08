@@ -243,14 +243,17 @@ select:focus{
 input[type=radio] {
   display: none;
 }
+
+.range{
+  margin: 5px 27px 5px 0;
+}
 .radio{
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  margin: 5px 27px 5px 0;
-  padding-left: 27px;
   position: relative;
   width: auto;
+  padding-left: 27px;
 }
 .radio::before {
   background: #fff;

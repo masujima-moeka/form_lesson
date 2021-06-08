@@ -27,23 +27,31 @@
       <div class="box inner">
         <div class="inline">
           <p class="text cmt">名字</p>
-          <label for="family-name"></label>
-          <input type="text" id="family-name" name="family-name" required aria-required="true" class="input textbox name">
+          <label for="family-name">
+            <input type="text" id="family-name" name="family-name" required aria-required="true" class="input textbox name">
+          </label>
         </div>
         <div class="inline right">
           <p class="text cmt">名前</p>
-          <label for="given-nam"></label>
-          <input type="text" id="given-name" name="given-name" required aria-required="true" class="input textbox name">
+          <label for="given-nam">
+            <input type="text" id="given-name" name="given-name" required aria-required="true" class="input textbox name">
+          </label>
         </div>
         <div class="box">
           <p class="text">性別</p>
           <div class="input">
-            <input type="radio" id="man" name="sex">
-            <label for="man" class="radio">男性</label>
-            <input type="radio" id="woman" name="sex">
-            <label for="woman" class="radio">女性</label>
-            <input type="radio" id="other" name="sex">
-            <label for="other" class="radio">その他</label>
+            <label for="man" class="range">
+              <input type="radio" id="man" name="sex">
+              <span class="radio">男性</span>
+            </label>
+            <label for="woman" class="range">
+              <input type="radio" id="woman" name="sex">
+              <span class="radio">女性</span>
+            </label>
+            <label for="other" class="range">
+              <input type="radio" id="other" name="sex">
+              <span  class="radio">その他</span>
+            </label>
           </div>
         </div>
         <div class="box">
@@ -59,13 +67,15 @@
         </div>
         <div class="box">
           <p class="text cmt">Eメール</p>
-          <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="ex)hoge@example.com" required aria-required="true" class="input textbox column">
+          <label for="email">
+            <input type="email" id="email" name="email" placeholder="ex)hoge@example.com" required aria-required="true" class="input textbox column">
+          </label>
         </div>
         <div class="box">
           <p class="text">電話番号</p>
-          <label for="tel" class="label"></label>
-          <input type="text" id="tel" name="tel" placeholder="ex)09012345678" class="input textbox column">
+          <label for="tel" class="label">
+            <input type="text" id="tel" name="tel" placeholder="ex)09012345678" class="input textbox column">
+          </label>
         </div>
         <div class="box">
           <p class="text cmt">パスワード</p>
@@ -82,7 +92,7 @@
         <div class="box">
           <p class="text">希望コース</p>
           <div class="input checkbox">
-            <div class="">
+            <div>
               <input id="front" type="checkbox" name="course">
               <label for="front">フロントエンド</label>
             </div>
